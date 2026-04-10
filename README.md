@@ -109,4 +109,3 @@ After a 3-epoch calibration utilizing only ~17M parameters (~0.45% of total trai
 2. **Highly Hardware Efficient**: The entire robust training benchmark dynamically scales efficiently with Mixed Precision & Gradient Accumulation, completing in under 15 minutes (~850s).
 3. **Optimized Load Balancing**: The system achieves an incredibly balanced routing coefficient of variation (CoV), ensuring that most specialized experts are saturated equitably. 
 
-For more deep-dive analyses, ablation graphs, and layer-wise $α$ findings, explore the comprehensive [analysis_results.md](analysis_results.md).
