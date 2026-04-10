@@ -1,0 +1,91 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── ML / Data ─────────────────────────────────────────────────────────────────
+# Hugging Face model cache (can be huge)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.pkl
+
+# Large output files
+carr_output/plots/*.png
+carr_output/plots/*.pdf
+
+# Cached tokenizers / datasets (HF)
+~/.cache/huggingface/
+
+# ── LaTeX ─────────────────────────────────────────────────────────────────────
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.bbl
+report/*.blg
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/*.synctex(busy)
+report/_minted-*/
+# Keep the compiled PDF if you want it tracked; comment out to exclude:
+# report/*.pdf
+
+# ── Typst ─────────────────────────────────────────────────────────────────────
+presentation/*.pdf
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+report
+presentation
+analysis_results.md
+report_inlp.pdf
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+
+# ── Secrets / credentials ─────────────────────────────────────────────────────
+.env
+*.env
+secrets.json
+hf_token.txt
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+*.tmp
+*.swp
+*.swo

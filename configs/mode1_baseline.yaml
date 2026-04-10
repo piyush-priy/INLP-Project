@@ -1,0 +1,23 @@
+mode: baseline
+
+model:
+  name: "mistralai/Mistral-7B-v0.1"
+  load_in_4bit: true
+  torch_dtype: "float16"
+
+# No CARR patching — vanilla Mixtral baseline
+carr:
+  enabled: false
+
+calibration:
+  # No training for baseline — only evaluation
+  batch_size: 2
+  max_seq_length: 512
+  dataset_name: "wikitext"
+  dataset_config: "wikitext-103-raw-v1"
+  max_calibration_tokens: 50000
+
+evaluation:
+  batch_size: 4
+  max_seq_length: 512
+  num_eval_batches: 100

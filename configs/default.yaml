@@ -1,0 +1,35 @@
+model:
+  name: "mistralai/Mistral-7B-v0.1"
+  load_in_4bit: true
+  torch_dtype: "float16"
+
+carr:
+  num_v_experts: 8
+  expert_inner_dim: 32
+  probe_dim: 8
+  top_k: 2
+  alpha_init: 0.0
+  scale_capability: true
+  use_shared_expert: false
+  shared_expert_idx: 0
+  probe_refresh_epochs: 1
+
+calibration:
+  learning_rate: 1.0e-4
+  weight_decay: 0.01
+  scheduler: "cosine"
+  num_epochs: 3
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  max_seq_length: 512
+  dataset_name: "wikitext"
+  dataset_config: "wikitext-103-raw-v1"
+  max_calibration_tokens: 50000
+  warmup_steps: 50
+  logging_steps: 10
+  save_steps: 500
+  seed: 42
+
+evaluation:
+  batch_size: 4
+  max_seq_length: 512

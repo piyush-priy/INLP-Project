@@ -1,0 +1,22 @@
+{
+  "mode": "baseline",
+  "train_loss": [],
+  "val_perplexity": [
+    570.5945820957758
+  ],
+  "routing_metrics": [],
+  "alpha_history": [],
+  "wall_time_seconds": 97.44078874588013,
+  "baseline_metrics": {
+    "perplexity": 570.5945820957758,
+    "load_entropy": null,
+    "cov": null,
+    "jaccard": null
+  },
+  "final_metrics": {
+    "perplexity": 570.5945820957758,
+    "load_entropy": null,
+    "cov": null,
+    "jaccard": null
+  }
+}
